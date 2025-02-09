@@ -1,7 +1,7 @@
 # dynv6updater
 dynv6.com javascript, update IPs from iPhone (scriptable)
 
-## Installation und Konfiguration des Skripts **getIP.js** für Scriptable
+## Installation und Konfiguration des Skripts **dynv6updater.js** für Scriptable
 
 Dieses Dokument beschreibt Schritt für Schritt, wie du ein JavaScript-Skript (z. B. für DynDNS-/IP-Abfragen) in Scriptable auf iOS installierst und konfigurierst.
 
