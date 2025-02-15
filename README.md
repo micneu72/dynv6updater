@@ -1,47 +1,47 @@
 # dynv6updater
 dynv6.com javascript, update IPs from iPhone (scriptable)
 
-## Installation und Konfiguration des Skripts **dynv6updater.js** für Scriptable
+## Installation and Configuration of **dynv6updater.js** for Scriptable
 
-Dieses Dokument beschreibt Schritt für Schritt, wie du ein JavaScript-Skript (z. B. für DynDNS-/IP-Abfragen) in Scriptable auf iOS installierst und konfigurierst.
-
----
-
-### 1. Skript in iCloud Drive ablegen
-
-1. **Ordner finden**  
-   Öffne deinen **iCloud Drive** (über die Dateien-App auf dem iPhone/iPad oder über [icloud.com](https://icloud.com) im Browser).
-
-2. **Verzeichnis `Scriptable`**  
-   Navigiere in den Ordner `Scriptable`. Dieser wird von der Scriptable-App automatisch überwacht.
-
-3. **Datei hochladen**  
-   Lege dein Skript als `.js`-Datei in diesem Ordner ab. In unserem Beispiel heißt es **`dynv6updater.js`**.  
-   - Alternativ kannst du das Skript in einen beliebigen Ordner kopieren und es später in Scriptable importieren.  
-   - Wenn du unterwegs nur Zugriff auf einen PC/Mac hast, kannst du das Skript auch über [icloud.com](https://icloud.com) hochladen.
+This document describes step by step how to install and configure a JavaScript script (e.g., for DynDNS/IP queries) in Scriptable on iOS.
 
 ---
 
-### 2. Skript in Scriptable anzeigen
+### 1. Place Script in iCloud Drive
 
-1. **Scriptable-App öffnen**  
-   Starte die **Scriptable-App** auf deinem iPhone oder iPad.
+1. **Find Folder**  
+   Open your **iCloud Drive** (via the Files app on iPhone/iPad or via [icloud.com](https://icloud.com) in browser).
 
-2. **Automatische Synchronisierung**  
-   Warte einen kurzen Augenblick, bis die iCloud-Synchronisierung abgeschlossen ist.  
-   - Alle Skripte im iCloud-Ordner `Scriptable` werden automatisch in der App gelistet.
+2. **Directory `Scriptable`**  
+   Navigate to the `Scriptable` folder. This is automatically monitored by the Scriptable app.
 
-3. **Skript auswählen**  
-   Tippe auf den Namen **`dynv6updater.js`**, um den Quellcode in Scriptable zu öffnen.
+3. **Upload File**  
+   Place your script as a `.js` file in this folder. In our example, it's called **`dynv6updater.js`**.  
+   - Alternatively, you can copy the script to any folder and import it into Scriptable later.  
+   - If you only have access to a PC/Mac while on the go, you can also upload the script via [icloud.com](https://icloud.com).
 
 ---
 
-### 3. Variablen anpassen
+### 2. View Script in Scriptable
 
-In manchen Skripten (z. B. für DynDNS) musst du **Hostname** und/oder **Token** vor dem Ausführen anpassen:
+1. **Open Scriptable App**  
+   Launch the **Scriptable app** on your iPhone or iPad.
 
-1. **Quellcode bearbeiten**  
-   Scrolle zum Abschnitt, in dem deine Variablen definiert sind. Beispiel:
+2. **Automatic Synchronization**  
+   Wait a moment for iCloud synchronization to complete.  
+   - All scripts in the iCloud folder `Scriptable` are automatically listed in the app.
+
+3. **Select Script**  
+   Tap the name **`dynv6updater.js`** to open the source code in Scriptable.
+
+---
+
+### 3. Adjust Variables
+
+In some scripts (e.g., for DynDNS) you need to adjust **hostname** and/or **token** before running:
+
+1. **Edit Source Code**  
+   Scroll to the section where your variables are defined. Example:
    ```js
    let kodihost   = "meinhost.dedyn.io";  // <-- deinen dynv6-Hostnamen hier eintragen
    let dedynToken = "MEIN_SUPER_TOKEN";   // <-- deinen dynv6.com-Token hier einfügen
